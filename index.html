@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>网页示例</title>
+		<link rel="stylesheet" href="css/styles.css">
+
+	</head>
+	<body>
+
+		<!-- 导航栏 -->
+		<nav class="navbar">
+			<img src="img/ataz标签.jpg" alt="Image 1">
+			<ul class="nav-links">
+				<li class="navbar-item1" id="navbar-li">
+					<a href="#">首页</a>
+				</li>
+				<li class="navbar-item2" id="navbar-li">
+					<a href="#" class="dropbtn">产品服务</a>
+					<div class="dropdown-content">
+						<a href="#">服务一</a>
+						<a href="#">服务二</a>
+						<a href="#">服务三</a>
+					</div>
+				</li>
+				<li class="navbar-item3" id="navbar-li">
+					<a href="#" class="dropbtn">品牌介绍</a>
+					<div class="dropdown-content">
+						<a href="#">介绍一</a>
+						<a href="#">介绍二</a>
+						<a href="#">介绍三</a>
+						<a href="#">介绍四</a>
+					</div>
+				</li>
+				<li class="navbar-item4" id="navbar-li">
+					<a href="#" class="dropbtn">团队介绍</a>
+					<div class="dropdown-content">
+						<a href="#">介绍一</a>
+						<a href="#">介绍二</a>
+					</div>
+				</li>
+				<li class="navbar-item5" id="navbar-li">
+					<a href="#">新闻动态</a>
+				</li>
+				<li class="navbar-item6" id="navbar-li">
+					<a href="#">联系我们</a>
+				</li>
+				<div class="search-box">
+					<input type="text" placeholder="搜索...">
+				</div>
+				<li class="more-menu">
+					<a href="#" class="dropbtn">更多</a>
+					<div class="dropdown-content">
+						<a href="#">团队介绍</a>
+						<a href="#">新闻动态</a>
+					</div>
+				</li>
+				
+		</nav>
+
+		<!-- 轮播图 -->
+		<div class="carousel">
+			<img src="img/半灌胶AMF-UH系列.jpg" alt="Slide 1" class="active">
+			<img src="img/超薄塑料AI-PU系列.jpg" alt="Slide 2">
+			<img src="img/医疗专用开板型AO-MU系列.jpg" alt="Slide 3">
+			<div class="carousel-controls">
+				<button id="prevBtn">&lt;</button>
+				<button id="nextBtn">&gt;</button>
+			</div>
+		</div>
+
+		<div class="text-title">
+			<h3>应用领域</h3>
+		</div>
+
+
+		<!-- 横向滚动面板 -->
+		<div class="horizontal-scroll-panel">
+			<a href="https://www.atazpower.com/html/products.html" target="_blank">
+				<img src="img/工业控制.png" alt="Image 1">
+				<p class="app-title">工业控制</p>
+			</a>
+			<a href="https://www.atazpower.com/html/products.html" target="_blank">
+				<img src="img/光伏行业.jpg" alt="Image 2">
+				<p class="app-title">光伏行业</p>
+			</a>
+			<a href="https://www.atazpower.com/html/products.html" target="_blank">
+				<img src="img/汽车与桩.png" alt="Image 3">
+				<p class="app-title">汽车与桩</p>
+			</a>
+			<a href="https://www.atazpower.com/html/products.html" target="_blank">
+				<img src="img/医疗设备.jpg" alt="Image 4">
+				<p class="app-title">医疗设备</p>
+			</a>
+			<a href="https://www.atazpower.com/html/products.html" target="_blank">
+				<img src="img/智慧城市.jpg" alt="Image 5">
+				<p class="app-title">智慧城市</p>
+			</a>
+			<a href="https://www.atazpower.com/html/products.html" target="_blank">
+				<img src="img/通信行业.jpg" alt="Image 6">
+				<p class="app-title">通信行业</p>
+			</a>
+			<a href="https://www.atazpower.com/html/products.html" target="_blank">
+				<img src="img/激光设备.jpg" alt="Image 7">
+				<p class="app-title">激光设备</p>
+			</a>
+			<a href="https://www.atazpower.com/html/products.html" target="_blank">
+				<img src="img/机器人.jpg" alt="Image 8">
+				<p class="app-title">机器人</p>
+			</a>
+		</div>
+
+
+		<div class="text-title">
+			<h3>公司动态</h3>
+		</div>
+
+		<div class="company-dynamics">
+			<div class="item">
+				<img src="img/ataz标签.jpg" alt="Image 1">
+				<div class="text-container">
+					<h4>我是图1的介绍</h4>
+					<p>这是一个很长很长很长很长很长很长很长很长很长很长很长的文字介绍，可能会超出两行，但会被截断并显示省略号。
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/ataz标签.jpg" alt="Image 2">
+				<div class="text-container">
+					<h4>我是图2的介绍</h4>
+					<p>这是一个很长很长很长很长很长很长很长很长很长很长很长很长的文字介绍，可能会超出两行，但会被截断并显示省略号。</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/ataz标签.jpg" alt="Image 3">
+				<div class="text-container">
+					<h4>我是图3的介绍</h4>
+					<p>这是一个很长的文字介绍，可能会超出两行，但会被截断并显示省略号。</p>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/carousel.js"></script>
+	</body>
+</html>

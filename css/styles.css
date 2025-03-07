@@ -1,0 +1,960 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 50 version
+*/
+
+/* 全局样式 */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	line-height: 1.15;
+	/* Correct the line height in all browsers */
+	-webkit-text-size-adjust: 100%;
+	/* Prevent adjustments of font size after orientation changes in iOS. */
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	background-color: transparent;
+	/* Remove the gray background on active links in IE 10. */
+}
+
+img {
+	border-style: none;
+	/* Remove the border on images inside links in IE 10. */
+}
+
+
+/* 导航栏样式 */
+/* 导航栏整体样式 */
+.navbar {
+	background-color: #ed7f30;
+	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+*html .navbar {
+	padding: 10px 20px;
+}
+
+*+html .navbar {
+	padding: 10px 20px;
+}
+
+.navbar img {
+	height: 50px;
+	width: 75px;
+}
+
+*html .navbar img {
+	height: 50px;
+	width: 75px;
+}
+
+*+html .navbar img {
+	height: 50px;
+	width: 75px;
+}
+
+.nav-links {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	position: relative;
+	/* 确保下拉菜单定位正确 */
+	margin: 0 15px;
+}
+
+*html .nav-links li {
+	margin: 0 15px;
+}
+
+*+html .nav-links li {
+	margin: 0 15px;
+}
+
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px 15px;
+	display: block;
+	display: inline;
+	display: table;
+	/* 行内属性标签 */
+}
+
+*html .nav-links a {
+	font-size: 18px;
+	padding: 10px 15px;
+}
+
+*+html .nav-links a {
+	font-size: 18px;
+	padding: 10px 15px;
+}
+
+
+.nav-links a:hover {
+	background-color: #ffeb3b;
+	color: black;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+*html .nav-links a:hover {
+	border-radius: 5px;
+}
+
+*+html .nav-links a:hover {
+	border-radius: 5px;
+}
+
+/* 下拉菜单样式 */
+.navbar-item2,
+.navbar-item3,
+.navbar-item4,
+more-menu {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	/* 默认隐藏下拉菜单 */
+	position: absolute;
+	top: 100%;
+	/* 下拉菜单位于父元素下方 */
+	left: 0;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	width: auto !important;
+	width: 160px;
+	width: e-xpression(document.body.clientWidth < 160? "160px": "auto");
+	overflow: visible;
+	-webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+*html .dropdown-content {
+	min-width: 160px;
+	width: auto !important;
+	width: 160px;
+	width: e-xpression(document.body.clientWidth < 160? "160px": "auto");
+	overflow: visible;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+*+html .dropdown-content {
+	min-width: 160px;
+	width: auto !important;
+	width: 160px;
+	width: e-xpression(document.body.clientWidth < 160? "160px": "auto");
+	overflow: visible;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	display: inline;
+	display: table;
+	/* 行内属性标签 */
+}
+
+*html .dropdown-content a {
+	padding: 12px 16px;
+}
+
+*+html .dropdown-content a {
+	padding: 12px 16px;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* 鼠标悬停时显示下拉菜单 */
+.more-menu:hover .dropdown-content,
+.navbar-item2:hover .dropdown-content,
+.navbar-item3:hover .dropdown-content,
+.navbar-item4:hover .dropdown-content {
+	display: block;
+	display: inline;
+	display: table;
+	/* 行内属性标签 */
+}
+
+.search-box {
+	display: none;
+}
+
+.more-menu {
+	display: none;
+}
+
+/* 搜索框容器样式 */
+.search-box {
+	position: relative;
+	width: auto;
+	/* 设置宽度 */
+}
+
+/* 输入框样式 */
+.search-box input {
+	width: 100%;
+	/* 占满容器宽度 */
+	padding: 10px 40px 10px 15px;
+	/* 内边距，右侧留出图标空间 */
+	font-size: 16px;
+	border: 2px solid #ccc;
+	/* 边框颜色 */
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	/* 圆角 */
+	outline: none;
+	/* 移除聚焦时的默认边框 */
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	/* 平滑过渡效果 */
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* 确保内边距不会影响宽度 */
+	background-color: #f9f9f9;
+	/* 背景颜色 */
+}
+
+*html .search-box input {
+	padding: 10px 40px 10px 15px;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 25px;
+}
+
+*+html .search-box input {
+	padding: 10px 40px 10px 15px;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 25px;
+}
+
+
+/* 输入框聚焦时的样式 */
+.search-box input:focus {
+	border-color: #ed7f30;
+	/* 聚焦时改变边框颜色 */
+	-webkit-box-shadow: 0 0 8px rgba(237, 127, 48, 0.5);
+	box-shadow: 0 0 8px rgba(237, 127, 48, 0.5);
+	/* 添加阴影效果 */
+}
+
+*html .search-box input:focus {
+	box-shadow: 0 0 8px rgba(237, 127, 48, 0.5);
+	/* 添加阴影效果 */
+}
+
+*+html .search-box input:focus {
+	box-shadow: 0 0 8px rgba(237, 127, 48, 0.5);
+	/* 添加阴影效果 */
+}
+
+/* 添加搜索图标 */
+.search-box::after {
+	content: "🔍";
+	/* 搜索图标 */
+	position: absolute;
+	right: 10px;
+	/* 图标位置 */
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	/* 垂直居中 */
+	color: #aaa;
+	/* 图标颜色 */
+	font-size: 18px;
+	pointer-events: none;
+	/* 防止图标被点击 */
+}
+
+*html .search-box::after {
+	right: 10px;
+	font-size: 18px;
+}
+
+*+html .search-box::after {
+	right: 10px;
+	font-size: 18px;
+}
+
+/* 轮播图样式 */
+.carousel {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+*html .carousel {
+	height: 600px;
+	margin-top: 20px;
+}
+
+*+html .carousel {
+	height: 600px;
+	margin-top: 20px;
+}
+
+
+.carousel img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	display: none;
+}
+
+.carousel img.active {
+	display: block;
+	display: inline;
+	display: table;
+	/* 行内属性标签 */
+}
+
+/* 控制按钮样式 */
+.carousel-controls {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.carousel-controls button {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	font-size: 20px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+*html .carousel-controls button {
+	font-size: 20px;
+	padding: 10px;
+}
+
+*+html .carousel-controls button {
+	font-size: 20px;
+	padding: 10px;
+}
+
+/* 横向滚动面板容器 */
+.horizontal-scroll-panel {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	overflow-x: auto;
+	gap: 30px;
+	padding: 10px;
+	margin: 30px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.horizontal-scroll-panel>* {
+	margin-right: 30px;
+	/* 替代gap */
+}
+
+/* 最后一个元素没有右边距 */
+.horizontal-scroll-panel>*:last-child {
+	margin-right: 0;
+}
+
+*html .horizontal-scroll-panel {
+	gap: 30px;
+	padding: 10px;
+	margin: 30px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+*+html .horizontal-scroll-panel {
+	gap: 30px;
+	padding: 10px;
+	margin: 30px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+
+
+/* 隐藏滚动条（可选） */
+.horizontal-scroll-panel::-webkit-scrollbar {
+	display: none;
+}
+
+/* 图片样式 */
+.horizontal-scroll-panel img {
+	width: 250px;
+	height: 250px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+*html .horizontal-scroll-panel img {
+	width: 250px;
+	height: 250px;
+	border-radius: 5px;
+}
+
+*+html .horizontal-scroll-panel img {
+	width: 250px;
+	height: 250px;
+	border-radius: 5px;
+}
+
+
+/* 链接样式 */
+.horizontal-scroll-panel a {
+	-ms-flex-negative: 0;
+	-webkit-flex-shrink: 0;
+	flex-shrink: 0;
+	text-decoration: none;
+}
+
+.app-title {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+.text-title {
+	padding: 20px;
+}
+
+*html .text-title {
+	padding: 20px;
+}
+
+*+html .text-title {
+	padding: 20px;
+}
+
+/* 公司动态样式 */
+.company-dynamics {
+	display: -ms-flexbox;
+	/* IE10专用语法 */
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	/* 添加换行支持 */
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 1800px;
+	padding: 0 20px;
+	*zoom: 1;
+	/* 触发IE hasLayout */
+
+}
+
+*html .company-dynamics {
+	gap: 20px;
+	max-width: 1800px;
+	padding: 0 20px;
+}
+
+*+html .company-dynamics {
+	gap: 20px;
+	max-width: 1800px;
+	padding: 0 20px;
+}
+
+*:first-child+html .company-dynamics {
+	width: 100%;
+	overflow: hidden;
+}
+
+.item {
+	-ms-flex: 1 0 30%;
+	/* IE10写法 (放大, 收缩, 基准值) */
+	-webkit-flex: 1;
+	flex: 1;
+	width: 30%;
+	/* 替代calc计算 */
+	margin: 0 1% 20px;
+	/* 替代gap属性 */
+	*width: 31%;
+	/* IE7 hack */
+	*margin: 0 1% 20px 0;
+	/* IE7 hack */
+	box-sizing: border-box;
+}
+
+*html .item {
+	padding: 20px;
+}
+
+*+html .item {
+	padding: 20px;
+}
+
+.item img {
+	max-width: 100%;
+	height: auto;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid #ddd;
+}
+
+/* IE7图片容器修正 */
+* html .item img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+*+html .item img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.item p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-top: 5px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+*html .item p {
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+*+html .item p {
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+p {
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+.item h4 {
+	font-size: 16px;
+	line-height: 1.5;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+*html .item h4 {
+	font-size: 16px;
+}
+
+*+html .item h4 {
+	font-size: 16px;
+}
+
+.text-container {
+	-ms-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	min-width: 150px;
+	/* 防止过度收缩 */
+}
+
+/* 万能 float 闭合(非常重要) 可以用这个解决多个 div 对齐时的间距不对 */
+/* Clear Fix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	display: inline;
+	display: table;
+	/* 行内属性标签 */
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/* Hide from IE Mac \*/
+.clearfix {
+	display: block;
+	display: inline;
+	display: table;
+	/* 行内属性标签 */
+}
+
+/* End hide from IE Mac */
+/* end of clearfix */
+
+
+
+
+/* 响应式设计：当屏幕宽度小于 1200px 时 */
+@media (max-width: 1200px) {
+
+	.navbar-item4,
+	.navbar-item5 {
+		display: none;
+	}
+
+	.more-menu {
+		display: inline;
+
+	}
+
+	/* 横向滚动面板容器 */
+	.horizontal-scroll-panel {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		/* IE10居中方案 */
+		-ms-flex-pack: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		/* 旧版IE换行处理 */
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		/* 替代gap属性的IE方案 */
+		margin: 30px -15px;
+		/* 负边距抵消子元素间距 */
+		padding: 10px 0;
+	}
+
+	/* IE6-7专用hack */
+	* html .horizontal-scroll-panel {
+		text-align: center;
+		margin: 30px 0;
+	}
+
+	*+html .horizontal-scroll-panel {
+		text-align: center;
+		margin: 30px 0;
+	}
+
+	/* 图片容器 */
+	.horizontal-scroll-panel>a {
+		/* IE10弹性项目设置 */
+		-ms-flex: 0 0 auto;
+		/* 间距替代方案 */
+		margin: 15px;
+		/* IE6-7 hack */
+		*display: inline-block;
+		*zoom: 1;
+		*margin: 15px 2%;
+	}
+
+	/* 图片样式 */
+	.horizontal-scroll-panel img {
+		width: 200px;
+		height: 200px;
+		/* IE10+ object-fit替代方案 */
+		-ms-object-fit: cover;
+		object-fit: cover;
+		/* IE8-居中方案 */
+		display: block;
+		margin: 0 auto;
+		/* IE9 border-radius */
+		-ms-border-radius: 5px;
+	}
+
+	/* IE11特殊处理 */
+	@media all and (-ms-high-contrast: none),
+	(-ms-high-contrast: active) {
+		.horizontal-scroll-panel {
+			justify-content: space-around;
+		}
+	}
+
+	*html .horizontal-scroll-panel img {
+		width: 200px;
+		height: 200px;
+		border-radius: 5px;
+	}
+
+	*+html .horizontal-scroll-panel img {
+		width: 200px;
+		height: 200px;
+		border-radius: 5px;
+	}
+
+	/* IE6-7图片定位修正 */
+	* html .horizontal-scroll-panel img,
+	*+html .horizontal-scroll-panel img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	/* 链接样式 */
+	.horizontal-scroll-panel a {
+		-ms-flex-negative: 0;
+		-webkit-flex-shrink: 0;
+		flex-shrink: 0;
+		/* 防止图片缩小 */
+		text-decoration: none;
+		/* 去掉链接下划线 */
+	}
+
+	/* 公司动态 */
+	.company-dynamics {
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+
+	/* IE7 hack */
+	*:first-child+html .company-dynamics {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	*html .company-dynamics {
+		gap: 10px;
+	}
+
+	*+html .company-dynamics {
+		gap: 10px;
+	}
+
+	.item {
+		-ms-flex: 1 0 100%;
+		-webkit-flex: 0 0 auto;
+		flex: 0 0 auto;
+		width: 100%;
+		*width: 98%;
+		/* IE7 hack */
+	}
+
+	.item img {
+		max-width: 150px !important;
+		width: auto !important;
+		height: auto !important;
+		float: left;
+		/* IE换行处理 */
+		margin: 0 10px 10px 0 !important;
+	}
+
+	* html .item img {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+
+
+	.item .text-container {
+		-ms-flex: 1;
+		-webkit-flex: 1;
+		flex: 1;
+		min-width: 150px;
+		/* 防止过度收缩 */
+	}
+
+
+	.item h4,
+	.item p {
+		display: block !important;
+		max-height: 4.5em;
+		/* 3行 x 1.5行高 */
+		overflow: hidden !important;
+		text-overflow: ellipsis;
+		white-space: normal !important;
+	}
+
+	/* 清除浮动 */
+	.item:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+/* 响应式布局：当屏幕宽度小于 768px 时 */
+@media (max-width: 768px) {
+
+
+	@media screen\9 {
+		.item img {
+			display: none !important;
+			width: 0 !important;
+			height: 0 !important;
+			visibility: hidden !important;
+		}
+
+		.text-container {
+			width: 100% !important;
+			float: none !important;
+			margin-left: 0 !important;
+		}
+	}
+
+	#navbar-li {
+		display: none;
+	}
+
+	.search-box {
+		display: inline;
+	}
+
+	.company-dynamics {
+		display: block !important;
+		*display: block !important;
+		/* IE7 hack */
+	}
+
+	.item {
+		display: block !important;
+		width: 100% !important;
+		*zoom: 1;
+		/* 触发IE hasLayout */
+		margin: 0 0 20px !important;
+		padding: 15px !important;
+		border: 1px solid #eee !important;
+		/* 可视化边界 */
+	}
+
+	*html .item {
+		margin-bottom: 20px;
+	}
+
+	*+html .item {
+		margin-bottom: 20px;
+	}
+
+	.item img {
+		display: none;
+		/* 替代contents方案 */
+		visibility: hidden;
+	}
+
+	/* 文字容器增强 */
+	.text-container {
+		display: block !important;
+		width: 100% !important;
+		*width: 95% !important;
+		/* IE7 hack */
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	/* IE7-9特殊处理 */
+	* html .item,
+	*+html .item {
+		display: inline-block !important;
+		width: 95% !important;
+		margin: 0 2% 20px !important;
+	}
+
+	/* 标题样式修正 */
+	.item h4 {
+		display: block !important;
+		width: 100% !important;
+		margin: 0 0 5px !important;
+		padding: 0 !important;
+		font-size: 14px !important;
+		line-height: 1.3 !important;
+		/* 防止文本溢出 */
+		white-space: normal !important;
+		overflow: visible !important;
+	}
+
+	/* 段落样式强化 */
+	.item p {
+		display: block !important;
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		/* 确保换行处理 */
+		word-wrap: break-word !important;
+		word-break: break-all !important;
+		/* 最小高度防止折叠 */
+		min-height: 50px !important;
+		*height: 50px !important;
+		/* IE7 hack */
+		line-height: 1.5 !important;
+	}
+
+	/* IE9-专用修正 */
+	@media screen and (min-width:0\0) {
+		.item p {
+			white-space: pre-wrap !important;
+		}
+	}
+
+	/* IE7特殊处理 */
+	* html .item p {
+		height: auto !important;
+		margin-bottom: 15px !important;
+	}
+
+}
